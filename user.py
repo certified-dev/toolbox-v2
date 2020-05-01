@@ -1,5 +1,5 @@
-from toolbox_v2.db import *
-from toolbox_v2.main import *
+from db import *
+from main import *
 import os
 import sqlite3
 import time
@@ -12,8 +12,10 @@ def register():
         pass
     else:
         init()
+
         def linux_test():
             assert ('linux' in sys.platform)
+
         try:
             linux_test()
         except AssertionError:

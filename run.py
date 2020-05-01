@@ -1,7 +1,7 @@
 import os
 import sqlite3
-from toolbox_v2.user import *
-from toolbox_v2.main import *
+from user import *
+from main import *
 
 if os.path.exists('db.sqlite'):
     print('\n')
